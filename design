@@ -1,0 +1,12 @@
+ * Schemata?
+ * Use XSD files?
+ * hostAddr/hostObj?
+ * Use contexts again?
+
+MUXd:
+
+ * Build on top of asyncore to minimise dependencies. There should never
+   be enough traffic to warrant anything other than poll() anyway.
+
+ * No actual parsing of requests goes on except for intercepting the
+   contents of the <clTRID>.
